@@ -1,5 +1,5 @@
 from django.core.management.base import BaseCommand
-from users.models import Usuario
+from users.models import User
 
 
 class Command(BaseCommand):
@@ -146,7 +146,7 @@ class Command(BaseCommand):
         ]
 
         for u in users:
-            user, created = Usuario.objects.get_or_create(
+            user, created = User.objects.get_or_create(
                 username=u["username"],
                 defaults={
                     "nickname": u["nickname"],
