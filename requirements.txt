@@ -1,0 +1,16 @@
+Django>=5.0,<6.0
+
+# Django REST
+djangorestframework
+
+# JWT
+djangorestframework-simplejwt
+
+# CORS
+django-cors-headers
+
+# PostgreSQL
+psycopg2-binary
+
+# Utils recomendados
+python-dotenv
